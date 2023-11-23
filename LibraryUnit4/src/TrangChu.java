@@ -5,7 +5,7 @@ public class TrangChu {
     public void trangChuHieuSach(ArrayList<SanPham> list) {
         Scanner scanner = new Scanner(System.in);
         System.out.println("\t\tTRANG CHU");
-        System.out.println("1. Chu");
+        System.out.println("1. Chu ");
         System.out.println("2. Khach hang");
         System.out.println("3. Thoat");
 

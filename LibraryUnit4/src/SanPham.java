@@ -61,6 +61,7 @@ public class SanPham {
                 listSanPham.add(sanPham);
             }
         }
+
         if (listSanPham.isEmpty()) {
             System.out.println("Khong co san pham co thong tin nhu yeu cau");
             return -1;
