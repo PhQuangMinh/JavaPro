@@ -1,8 +1,4 @@
-package controller;
-
 import java.util.Scanner;
-
-import model.Board;
 
 public class Ship {
     private int rowStart;
@@ -11,7 +7,10 @@ public class Ship {
     private int columnEnd;
     private int length;
 
-    public Ship(int rowStart, int columnStart, int rowEnd, int columnEnd, int length) {
+    Ship() {
+    }
+
+    Ship(int rowStart, int columnStart, int rowEnd, int columnEnd, int length) {
         this.rowStart = rowStart;
         this.columnStart = columnStart;
         this.rowEnd = rowEnd;
@@ -56,4 +55,19 @@ public class Ship {
         return true;
     }
 
+    public int getRowStart() {
+        return rowStart;
+    }
+
+    public int getRowEnd() {
+        return rowEnd;
+    }
+
+    public int getColumnStart() {
+        return columnStart;
+    }
+
+    public int getColumnEnd() {
+        return columnEnd;
+    }
 }

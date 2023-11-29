@@ -1,14 +1,10 @@
-package model;
-
 import java.util.Scanner;
 
-import controller.Choice;
-import controller.Player;
-import controller.Ship;
-
 public class GameShip {
-    public void menuShip(Scanner scanner, Player player) {
+
+    public void enterTypeShip(Scanner scanner, Player player, Player oppositePlayer) {
         int count[] = { 0, 2, 1, 1, 1 };
+        int quantity = 0;
         do {
             System.out.println("Enter the location of the ship for player " + player.getIndex());
             System.out.println("1. Enter location Patrol Boat");
@@ -16,17 +12,29 @@ public class GameShip {
             System.out.println("3. Enter location Submarine");
             System.out.println("4. Enter location Battle Ship");
             System.out.println("5. Exit");
-            int choice = Choice.enterChoice(4, scanner);
-            switch (choice) {
-                case 1:
-                    System.out.println("1. Enter location Patrol Boat");
-
-                    break;
-
-                default:
-                    break;
+            int choice = Choice.enterChoice(5, scanner);
+            if (choice == 5){
+                if (quantity<5){
+                    System.out.println("You have not entered a sufficient quantity of ship.");
+                    continue;
+                }
+                System.out.println("You have entered a sufficient quantity of ship.");
+                MenuGame menuGame = new MenuGame();
+                menuGame.menuInformationPlayer(scanner, player, oppositePlayer);
             }
-
+            if (count[choice] == 0) {
+                System.out.println("You have entered a sufficient quantity of this type of ship.");
+                continue;
+            }
+            Board board = new Board();
+            board.displayBoardShip(player.getBoard());
+            Ship ship = new Ship();
+            String nameShip = ship.nameShip(choice);
+            System.out.println(choice + ". Enter location " + nameShip);
+            count[choice]--;
+            if (enterLocationShip(scanner, choice, player)){
+                quantity++;
+            }
         } while (true);
     }
 
@@ -42,7 +50,7 @@ public class GameShip {
         return 5;
     }
 
-    public void enterLocationShip(Scanner scanner, int index) {
+    public boolean enterLocationShip(Scanner scanner, int index, Player player) {
         System.out.println("Enter starting location:");
         System.out.print("Enter row: ");
         int rowStart = Integer.parseInt(scanner.nextLine());
@@ -56,11 +64,12 @@ public class GameShip {
         int length = lengthShip(index);
         Ship ship = new Ship(rowStart, columnStart, rowEnd, columnEnd, length);
         if (!ship.checkLocation()) {
-            System.out.println("Enter inval location Ship");
-            return;
+            System.out.println("Enter invalid location Ship");
+            return false;
         }
         System.out.println("Successfully added ship");
         Board board = new Board();
-        board.updateBoard(ship);
+        board.updateBoard(ship, player);
+        return true;
     }
 }
