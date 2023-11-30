@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class GameShip {
@@ -6,19 +7,24 @@ public class GameShip {
         int count[] = { 0, 2, 1, 1, 1 };
         int quantity = 0;
         do {
-            System.out.println("Enter the location of the ship for player " + player.getIndex());
-            System.out.println("1. Enter location Patrol Boat");
-            System.out.println("2. Enter location Destroyer Boat");
-            System.out.println("3. Enter location Submarine");
-            System.out.println("4. Enter location Battle Ship");
+            ClearScreen.clearScreen();
+            System.out.println("Enter the location of the ship for player: " + player.getName());
+            Board board = new Board();
+            board.displayBoardShip(player.getBoard());
+            System.out.println("\n1. Enter location Patrol Boat(1 x 2).");
+            System.out.println("2. Enter location Destroyer Boat(1 x 4).");
+            System.out.println("3. Enter location Submarine(1 x 3).");
+            System.out.println("4. Enter location Battle Ship(1 x 5).");
             System.out.println("5. Exit");
             int choice = Choice.enterChoice(5, scanner);
-            if (choice == 5){
-                if (quantity<5){
+            if (choice == 5) {
+                if (quantity < 5) {
                     System.out.println("You have not entered a sufficient quantity of ship.");
                     continue;
                 }
                 System.out.println("You have entered a sufficient quantity of ship.");
+                player.setCompleted(!player.getCompleted());
+                ClearScreen.clearScreen();
                 MenuGame menuGame = new MenuGame();
                 menuGame.menuInformationPlayer(scanner, player, oppositePlayer);
             }
@@ -26,14 +32,12 @@ public class GameShip {
                 System.out.println("You have entered a sufficient quantity of this type of ship.");
                 continue;
             }
-            Board board = new Board();
-            board.displayBoardShip(player.getBoard());
             Ship ship = new Ship();
             String nameShip = ship.nameShip(choice);
-            System.out.println(choice + ". Enter location " + nameShip);
-            count[choice]--;
-            if (enterLocationShip(scanner, choice, player)){
+            System.out.println(choice + ". Enter location " + nameShip + "(1 x " + lengthShip(choice) + ").");
+            if (enterLocationShip(scanner, choice, player)) {
                 quantity++;
+                count[choice]--;
             }
         } while (true);
     }
@@ -62,14 +66,24 @@ public class GameShip {
         System.out.print("Enter column: ");
         int columnEnd = Integer.parseInt(scanner.nextLine());
         int length = lengthShip(index);
-        Ship ship = new Ship(rowStart, columnStart, rowEnd, columnEnd, length);
-        if (!ship.checkLocation()) {
-            System.out.println("Enter invalid location Ship");
+        Ship ship = new Ship(rowStart, columnStart, rowEnd, columnEnd, length, true);
+        if (!ship.checkLocation(player.getBoard())) {
             return false;
         }
-        System.out.println("Successfully added ship");
+        ArrayList<Ship> ships = player.getShips();
+        ships.add(ship);
         Board board = new Board();
-        board.updateBoard(ship, player);
+        board.updateBoardShip(ship, player);
         return true;
+    }
+
+    public void updateShip(Player player, Player oppositePlayer) {
+        ArrayList<Ship> ships = oppositePlayer.getShips();
+        for (var ship : ships) {
+            if (ship.getCheckStatus(oppositePlayer.getBoard())) {
+                ship.setStatus(false);
+            }
+        }
+        oppositePlayer.setShips(ships);
     }
 }

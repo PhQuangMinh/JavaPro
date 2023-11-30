@@ -1,19 +1,23 @@
-import java.util.Scanner;
+import java.util.ArrayList;
 
 public class Player {
     private int index;
     private String name;
-    private int[] numberShip;
+    private int numberShot;
     private char[][] board;
     private char[][] oppositeBoard;
     private boolean completed;
+    private ArrayList<Ship> ships;
 
-    Player(int index, String name, int[] numberShip, char[][] board, char[][] oppositeBoard, Boolean completed) {
+    Player(int index, String name, int numberShot, char[][] board, char[][] oppositeBoard, Boolean completed,
+            ArrayList<Ship> ships) {
+        this.index = index;
         this.name = name;
-        this.numberShip = numberShip;
+        this.numberShot = numberShot;
         this.board = board;
         this.oppositeBoard = oppositeBoard;
         this.completed = completed;
+        this.ships = ships;
     }
 
     Player() {
@@ -21,6 +25,10 @@ public class Player {
 
     public int getIndex() {
         return this.index;
+    }
+
+    public String getName() {
+        return name;
     }
 
     public char[][] getBoard() {
@@ -31,7 +39,7 @@ public class Player {
         return oppositeBoard;
     }
 
-    public void setBoard(char[][] Board) {
+    public void setBoard(char[][] board) {
         this.board = board;
     }
 
@@ -45,5 +53,39 @@ public class Player {
 
     public void setCompleted(boolean completed) {
         this.completed = completed;
+    }
+
+    public ArrayList<Ship> getShips() {
+        return ships;
+    }
+
+    public void setShips(ArrayList<Ship> ships) {
+        this.ships = ships;
+    }
+
+    public int getNumberShot() {
+        return numberShot;
+    }
+
+    public void setNumberShot(int numberShot) {
+        this.numberShot = numberShot;
+    }
+
+    public int destroyedShips() {
+        int count = 0;
+        for (var ship : ships) {
+            if (!ship.getStatus())
+                count++;
+        }
+        return count;
+    }
+
+    public int remainNumberShips() {
+        int count = 0;
+        for (var ship : ships) {
+            if (ship.getStatus())
+                count++;
+        }
+        return count;
     }
 }

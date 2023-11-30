@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Game {
+public class Run {
     public static void main(String[] args) {
         Player player = new Player();
         Player oppositePlayer = new Player();

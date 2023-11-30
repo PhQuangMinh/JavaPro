@@ -1,7 +1,7 @@
 import java.io.IOException;
 
 public class ClearScreen {
-    public static void clrscr() {
+    public static void clearScreen() {
         try {
             if (System.getProperty("os.name").contains("Windows"))
                 new ProcessBuilder("cmd", "/c", "cls").inheritIO().start().waitFor();
