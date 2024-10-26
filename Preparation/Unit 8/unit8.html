@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+        <html>
+        <head>
+            <meta charset="UTF-8">
+            <title>M&#x1ed8;T S&#x1ed0; C&#x1ea4;U TR&Uacute;C D&#x1eee; LI&#x1ec6;U TH&#x1af;&#x1edc;NG TH&#x1ea4;Y TRONG JAVA</title>
+            <style>
+/* From extension vscode.github */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+.vscode-dark img[src$=\#gh-light-mode-only],
+.vscode-light img[src$=\#gh-dark-mode-only] {
+	display: none;
+}
+
+</style>
+            
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/markdown.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/highlight.css">
+<style>
+            body {
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', system-ui, 'Ubuntu', 'Droid Sans', sans-serif;
+                font-size: 14px;
+                line-height: 1.6;
+            }
+        </style>
+        <style>
+.task-list-item {
+    list-style-type: none;
+}
+
+.task-list-item-checkbox {
+    margin-left: -20px;
+    vertical-align: middle;
+    pointer-events: none;
+}
+</style>
+<style>
+:root {
+  --color-note: #0969da;
+  --color-tip: #1a7f37;
+  --color-warning: #9a6700;
+  --color-severe: #bc4c00;
+  --color-caution: #d1242f;
+  --color-important: #8250df;
+}
+
+</style>
+<style>
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-note: #2f81f7;
+    --color-tip: #3fb950;
+    --color-warning: #d29922;
+    --color-severe: #db6d28;
+    --color-caution: #f85149;
+    --color-important: #a371f7;
+  }
+}
+
+</style>
+<style>
+.markdown-alert {
+  padding: 0.5rem 1rem;
+  margin-bottom: 16px;
+  color: inherit;
+  border-left: .25em solid #888;
+}
+
+.markdown-alert>:first-child {
+  margin-top: 0
+}
+
+.markdown-alert>:last-child {
+  margin-bottom: 0
+}
+
+.markdown-alert .markdown-alert-title {
+  display: flex;
+  font-weight: 500;
+  align-items: center;
+  line-height: 1
+}
+
+.markdown-alert .markdown-alert-title .octicon {
+  margin-right: 0.5rem;
+  display: inline-block;
+  overflow: visible !important;
+  vertical-align: text-bottom;
+  fill: currentColor;
+}
+
+.markdown-alert.markdown-alert-note {
+  border-left-color: var(--color-note);
+}
+
+.markdown-alert.markdown-alert-note .markdown-alert-title {
+  color: var(--color-note);
+}
+
+.markdown-alert.markdown-alert-important {
+  border-left-color: var(--color-important);
+}
+
+.markdown-alert.markdown-alert-important .markdown-alert-title {
+  color: var(--color-important);
+}
+
+.markdown-alert.markdown-alert-warning {
+  border-left-color: var(--color-warning);
+}
+
+.markdown-alert.markdown-alert-warning .markdown-alert-title {
+  color: var(--color-warning);
+}
+
+.markdown-alert.markdown-alert-tip {
+  border-left-color: var(--color-tip);
+}
+
+.markdown-alert.markdown-alert-tip .markdown-alert-title {
+  color: var(--color-tip);
+}
+
+.markdown-alert.markdown-alert-caution {
+  border-left-color: var(--color-caution);
+}
+
+.markdown-alert.markdown-alert-caution .markdown-alert-title {
+  color: var(--color-caution);
+}
+
+</style>
+        
+        </head>
+        <body class="vscode-body vscode-light">
+            <h1 id="một-số-cấu-trúc-dữ-liệu-thường-thấy-trong-java">MỘT SỐ CẤU TRÚC DỮ LIỆU THƯỜNG THẤY TRONG JAVA</h1>
+<h2 id="i-cấu-trúc-dữ-liệu">I. Cấu trúc dữ liệu</h2>
+<h3 id="1-định-nghĩa">1. Định nghĩa</h3>
+<ul>
+<li>Trong khoa học máy tính, <strong>cấu trúc dữ liệu là một định dạng tổ chức, quản lý và lưu trữ dữ liệu.</strong> Để cấu trúc dữ liệu thực tế, nó phải phù hợp với nhiệm vụ và dễ sử dụng.</li>
+</ul>
+<h3 id="2-các-thành-phần">2. Các thành phần</h3>
+<ul>
+<li><strong>Mối quan hệ:</strong> Trong cấu trúc dữ liệu, các yếu tố có liên quan hoặc được kết nối theo một cách nào đó.</li>
+<li><strong>Hoạt động:</strong> Mỗi cấu trúc dữ liệu được liên kết với một tập hợp các chức năng có thể thực hiện và thao tác với nó.</li>
+<li><strong>Giá trị và kiểu dữ liệu:</strong> Cấu trúc dữ liệu bao gồm các giá trị mà nó chứa và loại dữ liệu mà nó cho phép.</li>
+</ul>
+<h3 id="3-các-loại-cấu-trúc-dữ-liệu">3. Các loại cấu trúc dữ liệu</h3>
+<p><img src="file:///d:\Programming\Java\JavaPro\Preparation\Unit 8\image.png" alt="Alt text"></p>
+<h4 id="31-primitive-data-structures">3.1 <strong>Primitive Data Structures</strong></h4>
+<p><img src="file:///d:\Programming\Java\JavaPro\Preparation\Unit 8\image-1.png" alt="Alt text"></p>
+<h4 id="32-non-primitive-data-structures">3.2 <strong>Non-primitive Data Structures</strong></h4>
+<ul>
+<li><strong>Linear:</strong> Cấu trúc dữ liệu trong đó các phần tử dữ liệu được sắp xếp tuần tự.
+<ul>
+<li><strong>Static:</strong> Cấu trúc dữ liệu tĩnh có kích thước bộ nhớ cố định.</li>
+<li><strong>Dynamic:</strong> Cấu trúc dữ liệu tĩnh có kích thước bộ nhớ không cố định.</li>
+</ul>
+</li>
+<li><strong>Non-linear:</strong> Cấu trúc dữ liệu trong đó các phần tử dữ liệu được sắp xếp không tuần tự.</li>
+</ul>
+<h3 id="4-sử-dụng">4. Sử dụng</h3>
+<ul>
+<li>Quyết định về cấu trúc dữ liệu nào sẽ sử dụng thường dựa trên một số yếu tố. Trong nhiều trường hợp, không có một sự lựa chọn hoàn hảo.
+<ul>
+<li>Dung lượng lưu trữ</li>
+<li>Yêu cầu về hiệu suất</li>
+<li>Loại dữ liệu</li>
+<li>Cách dữ liệu được sử dụng</li>
+<li>Dễ sử dụng</li>
+<li>Tính lâu dài</li>
+</ul>
+</li>
+</ul>
+<pre><code>Nguồn: 
+- https://www.geeksforgeeks.org/data-structures/
+- https://www.javatpoint.com/data-structures-in-java
+- https://www.linode.com/docs/guides/data-structure/
+- https://www.scaler.com/topics/difference-between-primitive-and-non-primitive-data-structures/
+</code></pre>
+<h1 id="ii-interface-iterable-collection">II. Interface iterable, collection</h1>
+<h2 id="1-interface-iterable">1. Interface iterable</h2>
+<ul>
+<li><strong>Interface Iterable</strong>  cho phép người dùng lặp qua các phần tử một cách tuần tự từ một bộ sưu tập. Nó trả về từng phần tử của bộ sưu tập lần lượt, bắt đầu từ phía trước, di chuyển theo hướng về phía trước.</li>
+<li><strong>Interface Collection</strong> kế thừa Interface Iterable, do đó, tất cả các lớp triển khai interface collection đều có thể lặp lại được.</li>
+</ul>
+<h2 id="2-các-cách-interface-iterable">2. Các cách interface iterable</h2>
+<ul>
+<li>Phương thức iterator()</li>
+</ul>
+<pre><code class="language-java"><span class="hljs-keyword">import</span> java.util.*;
+
+<span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">Test</span> {
+    <span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">main</span><span class="hljs-params">(String[] args)</span> {
+        Stack&lt;Integer&gt; stack = <span class="hljs-keyword">new</span> <span class="hljs-title class_">Stack</span>&lt;&gt;();
+        <span class="hljs-keyword">for</span> (<span class="hljs-type">int</span> <span class="hljs-variable">i</span> <span class="hljs-operator">=</span> <span class="hljs-number">0</span>; i &lt; <span class="hljs-number">6</span>; i++) {
+            stack.push(i);
+        }
+        Iterator&lt;Integer&gt; iter;
+        iter = stack.iterator();
+        <span class="hljs-keyword">while</span> (iter.hasNext()) {
+            <span class="hljs-type">int</span> <span class="hljs-variable">nextElement</span> <span class="hljs-operator">=</span> iter.next();
+            System.out.print(nextElement + <span class="hljs-string">&quot; &quot;</span>);
+        }
+    }
+}
+</code></pre>
+<ul>
+<li>Vòng lặp for nâng cao</li>
+</ul>
+<pre><code class="language-java"><span class="hljs-keyword">import</span> java.util.*;
+
+<span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">Test</span> {
+    <span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">main</span><span class="hljs-params">(String[] args)</span> {
+        Stack&lt;Integer&gt; stack = <span class="hljs-keyword">new</span> <span class="hljs-title class_">Stack</span>&lt;&gt;();
+        <span class="hljs-keyword">for</span> (<span class="hljs-type">int</span> <span class="hljs-variable">i</span> <span class="hljs-operator">=</span> <span class="hljs-number">0</span>; i &lt; <span class="hljs-number">6</span>; i++) {
+            stack.push(i);
+        }
+        <span class="hljs-keyword">for</span> (<span class="hljs-type">int</span> i:stack) 
+            System.out.println(i);
+    }
+}
+</code></pre>
+<ul>
+<li>Phương thức forEach()
+<strong>Syntax</strong></li>
+</ul>
+<pre><code class="language-java">Collection_name.forEach(
+variable_name -&gt; {<span class="hljs-comment">// action to be performed with the elements;</span>
+});
+</code></pre>
+<p><strong>Ví dụ</strong></p>
+<pre><code class="language-java"><span class="hljs-keyword">import</span> java.util.*;
+
+<span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">Test</span> {
+    <span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">main</span><span class="hljs-params">(String[] args)</span> {
+        Stack&lt;Integer&gt; stack = <span class="hljs-keyword">new</span> <span class="hljs-title class_">Stack</span>&lt;&gt;();
+        <span class="hljs-keyword">for</span> (<span class="hljs-type">int</span> <span class="hljs-variable">i</span> <span class="hljs-operator">=</span> <span class="hljs-number">0</span>; i &lt; <span class="hljs-number">6</span>; i++) {
+            stack.push(i);
+        }
+        stack.forEach(i-&gt;System.out.println(i));
+    }
+}
+</code></pre>
+<pre><code>Nguồn:https://www.scaler.com/topics/java/iterable-interface-in-java/
+</code></pre>
+<h2 id="2-interface-collection">2. interface collection</h2>
+<ul>
+<li><strong>Interface Collection</strong> không được thực hiện trực tiếp bởi bất kỳ lớp nào. Tuy nhiên, nó được triển khai gián tiếp thông qua các kiểu con hoặc giao diện con của nó như <strong>list, queue và set.</strong>
+<img src="file:///d:\Programming\Java\JavaPro\Preparation\Unit 8\image-3.png" alt="Alt text"></li>
+</ul>
+<h2 id="21-list-interface">2.1 List interface</h2>
+<ul>
+<li>Cấu trúc dữ liệu kiểu danh sách trong đó chúng ta có thể lưu trữ bộ sưu tập các đối tượng theo thứ tự. Nó có thể có giá trị trùng lặp.</li>
+<li>Ví dụ</li>
+</ul>
+<pre><code class="language-java"><span class="hljs-keyword">import</span> java.util.*;
+
+<span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">Test</span> {
+    <span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">main</span><span class="hljs-params">(String[] args)</span> {
+        List&lt;Integer&gt; stack = <span class="hljs-keyword">new</span> <span class="hljs-title class_">Stack</span>&lt;&gt;();
+        stack.add(<span class="hljs-number">1</span>);
+        stack.add(<span class="hljs-number">2</span>);
+        stack.add(<span class="hljs-number">1</span>);
+        <span class="hljs-keyword">for</span>(<span class="hljs-type">int</span> x:stack) System.out.println(x);     
+    }
+}
+output: <span class="hljs-number">1</span>
+        <span class="hljs-number">2</span>
+        <span class="hljs-number">1</span>
+</code></pre>
+<h2 id="22-queue-interface">2.2 Queue Interface</h2>
+<ul>
+<li><strong>Interface Queue</strong> duy trì thứ tự nhập trước xuất trước(FIFO).</li>
+<li>Ví dụ:</li>
+</ul>
+<pre><code class="language-java"><span class="hljs-keyword">import</span> java.util.*;
+
+<span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">Test</span> {
+    <span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">main</span><span class="hljs-params">(String[] args)</span> {
+        Queue&lt;Integer&gt; link = <span class="hljs-keyword">new</span> <span class="hljs-title class_">LinkedList</span>&lt;&gt;();
+        link.add(<span class="hljs-number">1</span>);
+        link.add(<span class="hljs-number">2</span>);
+        link.add(<span class="hljs-number">3</span>);
+        <span class="hljs-keyword">for</span>(<span class="hljs-type">int</span> x:link) System.out.println(x);     
+    }
+}
+</code></pre>
+<h2 id="23-set">2.3 Set</h2>
+<ul>
+<li>Set đại diện cho tập hợp các phần tử không có thứ tự, không cho phép chúng ta lưu trữ các mục trùng lặp.</li>
+</ul>
+<pre><code class="language-java"><span class="hljs-keyword">import</span> java.util.*;
+
+<span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">Test</span> {
+    <span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">main</span><span class="hljs-params">(String[] args)</span> {
+        Set&lt;String&gt; set = <span class="hljs-keyword">new</span> <span class="hljs-title class_">HashSet</span>&lt;&gt;();
+        set.add(<span class="hljs-string">&quot;m&quot;</span>);
+        set.add(<span class="hljs-string">&quot;i&quot;</span>);
+        set.add(<span class="hljs-string">&quot;b&quot;</span>);
+        set.add(<span class="hljs-string">&quot;b&quot;</span>);
+        <span class="hljs-keyword">for</span> (String x:set) System.out.println(x);
+    }
+}
+</code></pre>
+<pre><code>Nguồn: https://www.javatpoint.com/collections-in-java
+</code></pre>
+<h1 id="iii-interface-map-sorted-map">III. Interface map, sorted map</h1>
+<p><img src="file:///d:\Programming\Java\JavaPro\Preparation\Unit 8\image-4.png" alt="Alt text"></p>
+<h2 id="1-map">1. Map</h2>
+<ul>
+<li>Các phần tử của Map được lưu trữ trong các cặp key/ value. Key là các giá trị duy nhất được liên kết với các value riêng lẻ .</li>
+<li>Một map không thể chứa các key trùng lặp. Mỗi key được liên kết với một giá trị duy nhất.</li>
+</ul>
+<h2 id="2-sorted-map---tree-map">2. Sorted map - Tree map</h2>
+<ul>
+<li><strong>SortedMap trong Java</strong> có thể được sắp xếp theo thứ tự tự nhiên của các key của nó hoặc bằng cách cung cấp một Comparator lúc tạo Map.</li>
+<li>Ví dụ</li>
+</ul>
+<pre><code class="language-java"><span class="hljs-keyword">import</span> java.util.*; 
+  
+<span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">Test</span> { 
+  
+    <span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">main</span><span class="hljs-params">(String[] args)</span> 
+    { 
+        SortedMap&lt;String, Integer&gt; map = <span class="hljs-keyword">new</span> <span class="hljs-title class_">TreeMap</span>&lt;&gt;(Collections.reverseOrder());
+
+        map.put(<span class="hljs-string">&quot;b&quot;</span>, <span class="hljs-number">10</span>); 
+        map.put(<span class="hljs-string">&quot;a&quot;</span>, <span class="hljs-number">30</span>); 
+        map.put(<span class="hljs-string">&quot;c&quot;</span>, <span class="hljs-number">20</span>); 
+
+        <span class="hljs-keyword">for</span> (Map.Entry&lt;String, Integer&gt; e : map.entrySet()) 
+            System.out.println(e.getKey() + <span class="hljs-string">&quot; &quot;</span>+ e.getValue()); 
+    } 
+}
+output: c <span class="hljs-number">20</span>
+    b <span class="hljs-number">10</span>
+    a <span class="hljs-number">30</span>
+</code></pre>
+<h2 id="3-hashmap">3. HashMap</h2>
+<ul>
+<li>Không duy trì các thứ tự khi truyền các phần từ vào</li>
+</ul>
+<pre><code class="language-java"><span class="hljs-keyword">import</span> java.util.*; 
+  
+<span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">Test</span> { 
+  
+    <span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">main</span><span class="hljs-params">(String[] args)</span> 
+    { 
+        Map&lt;String, Integer&gt; map = <span class="hljs-keyword">new</span> <span class="hljs-title class_">HashMap</span>&lt;&gt;();
+
+        map.put(<span class="hljs-string">&quot;b&quot;</span>, <span class="hljs-number">10</span>); 
+        map.put(<span class="hljs-string">&quot;a&quot;</span>, <span class="hljs-number">30</span>); 
+        map.put(<span class="hljs-string">&quot;c&quot;</span>, <span class="hljs-number">20</span>); 
+
+        <span class="hljs-keyword">for</span> (Map.Entry&lt;String, Integer&gt; e : map.entrySet()) 
+            System.out.println(e.getKey() + <span class="hljs-string">&quot; &quot;</span>+ e.getValue()); 
+    } 
+}
+output: a <span class="hljs-number">30</span>
+        b <span class="hljs-number">10</span>
+        c <span class="hljs-number">20</span>
+</code></pre>
+<ul>
+<li>Do bảng băm thì nó sẽ băm các giá trị nên các số gần nhau thì máy tính sắp xếp các giá trị gần nhau
+=&gt; thay bằng giá trị to để xem</li>
+</ul>
+<h1 id="4-sort">4. Sort</h1>
+<h2 id="41-mảng">4.1 Mảng</h2>
+<pre><code class="language-java"><span class="hljs-keyword">import</span> java.util.*; 
+  
+<span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">Test</span> { 
+  
+    <span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">main</span><span class="hljs-params">(String[] args)</span> 
+    { 
+        <span class="hljs-type">int</span> [] array = <span class="hljs-keyword">new</span> <span class="hljs-title class_">int</span>[]{<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">4</span>, <span class="hljs-number">1</span>, <span class="hljs-number">3</span>, <span class="hljs-number">5</span>, <span class="hljs-number">7</span>, <span class="hljs-number">6</span>};
+        Arrays.sort(array);
+        <span class="hljs-keyword">for</span> (<span class="hljs-type">int</span> x : array) {
+            System.out.println(x);
+        }
+    } 
+}
+</code></pre>
+<h2 id="42-list">4.2 List</h2>
+<pre><code class="language-java"><span class="hljs-keyword">import</span> java.util.*; 
+  
+<span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">Test</span> { 
+  
+    <span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">main</span><span class="hljs-params">(String[] args)</span> 
+    { 
+        List&lt;Integer&gt; list = <span class="hljs-keyword">new</span> <span class="hljs-title class_">ArrayList</span>&lt;Integer&gt;(Arrays.asList(<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">4</span>, <span class="hljs-number">1</span>, <span class="hljs-number">3</span>, <span class="hljs-number">5</span>, <span class="hljs-number">7</span>, <span class="hljs-number">6</span>));
+        Collections.sort(list);
+        <span class="hljs-keyword">for</span> (Integer x:list) System.out.println(x);
+    } 
+}
+</code></pre>
+<h2 id="43-sắp-xếp-list-objects-sử-dụng-comparator">4.3 Sắp xếp list objects sử dụng Comparator</h2>
+<ul>
+<li>C1: implement interface Comparator<T></li>
+</ul>
+<pre><code class="language-java"><span class="hljs-keyword">import</span> java.util.ArrayList;
+<span class="hljs-keyword">import</span> java.util.Collections;
+<span class="hljs-keyword">import</span> java.util.Comparator;
+<span class="hljs-keyword">import</span> java.util.List;
+
+<span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">Student</span> <span class="hljs-keyword">implements</span> <span class="hljs-title class_">Comparator</span>&lt;Student&gt; {
+    <span class="hljs-keyword">private</span> <span class="hljs-type">int</span> age;
+
+    <span class="hljs-keyword">public</span> <span class="hljs-title function_">Student</span><span class="hljs-params">(<span class="hljs-type">int</span> age)</span> {
+        <span class="hljs-built_in">this</span>.age = age;
+    }
+
+    <span class="hljs-keyword">public</span> <span class="hljs-type">int</span> <span class="hljs-title function_">getAge</span><span class="hljs-params">()</span> {
+        <span class="hljs-keyword">return</span> age;
+    }
+
+    <span class="hljs-keyword">public</span> <span class="hljs-type">int</span> <span class="hljs-title function_">compare</span><span class="hljs-params">(Student o1, Student o2)</span> {
+        <span class="hljs-keyword">return</span> o1.getAge() - o2.getAge();
+    }
+
+    <span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">main</span><span class="hljs-params">(String[] args)</span> {
+        List&lt;Student&gt; list = <span class="hljs-keyword">new</span> <span class="hljs-title class_">ArrayList</span>&lt;&gt;();
+        list.add(<span class="hljs-keyword">new</span> <span class="hljs-title class_">Student</span>(<span class="hljs-number">17</span>));
+        list.add(<span class="hljs-keyword">new</span> <span class="hljs-title class_">Student</span>(<span class="hljs-number">19</span>));
+        list.add(<span class="hljs-keyword">new</span> <span class="hljs-title class_">Student</span>(<span class="hljs-number">18</span>));
+        Collections.sort(list, <span class="hljs-keyword">new</span> <span class="hljs-title class_">Student</span>());
+        <span class="hljs-keyword">for</span> (Student student:list) System.out.println(student.getAge());
+    }
+}
+</code></pre>
+<ul>
+<li>C2: Sử dụng anonymous comparator để so sánh</li>
+</ul>
+<pre><code class="language-java"><span class="hljs-keyword">import</span> java.util.ArrayList;
+<span class="hljs-keyword">import</span> java.util.Collections;
+<span class="hljs-keyword">import</span> java.util.Comparator;
+<span class="hljs-keyword">import</span> java.util.List;
+
+<span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">Student</span> {
+    <span class="hljs-keyword">private</span> <span class="hljs-type">int</span> age;
+
+    <span class="hljs-keyword">public</span> <span class="hljs-title function_">Student</span><span class="hljs-params">(<span class="hljs-type">int</span> age)</span> {
+        <span class="hljs-built_in">this</span>.age = age;
+    }
+
+    <span class="hljs-keyword">public</span> <span class="hljs-type">int</span> <span class="hljs-title function_">getAge</span><span class="hljs-params">()</span> {
+        <span class="hljs-keyword">return</span> age;
+    }
+
+    <span class="hljs-keyword">public</span> <span class="hljs-type">int</span> <span class="hljs-title function_">compare</span><span class="hljs-params">(Student o1, Student o2)</span> {
+        <span class="hljs-keyword">return</span> o1.getAge() - o2.getAge();
+    }
+
+    <span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">main</span><span class="hljs-params">(String[] args)</span> {
+        List&lt;Student&gt; list = <span class="hljs-keyword">new</span> <span class="hljs-title class_">ArrayList</span>&lt;&gt;();
+        list.add(<span class="hljs-keyword">new</span> <span class="hljs-title class_">Student</span>(<span class="hljs-number">17</span>));
+        list.add(<span class="hljs-keyword">new</span> <span class="hljs-title class_">Student</span>(<span class="hljs-number">19</span>));
+        list.add(<span class="hljs-keyword">new</span> <span class="hljs-title class_">Student</span>(<span class="hljs-number">18</span>));
+        Collections.sort(list, <span class="hljs-keyword">new</span> <span class="hljs-title class_">Comparator</span>&lt;Student&gt;() {
+            <span class="hljs-keyword">public</span> <span class="hljs-type">int</span> <span class="hljs-title function_">compare</span><span class="hljs-params">(Student o1, Student o2)</span> {
+                <span class="hljs-keyword">return</span> o1.getAge() - o2.getAge();
+            }
+        });
+        <span class="hljs-keyword">for</span> (Student student:list) System.out.println(student.getAge());
+    }
+}
+</code></pre>
+<h2 id="44-sắp-xếp-list-objects-sử-dụng-comparable">4.4 Sắp xếp list objects sử dụng Comparable<T></h2>
+<pre><code class="language-java"><span class="hljs-keyword">import</span> java.util.ArrayList;
+<span class="hljs-keyword">import</span> java.util.Collections;
+<span class="hljs-keyword">import</span> java.util.Comparator;
+<span class="hljs-keyword">import</span> java.util.List;
+
+<span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">Student</span> <span class="hljs-keyword">implements</span> <span class="hljs-title class_">Comparable</span>&lt;Student&gt;{
+    <span class="hljs-keyword">private</span> <span class="hljs-type">int</span> age;
+
+    <span class="hljs-keyword">public</span> <span class="hljs-title function_">Student</span><span class="hljs-params">(<span class="hljs-type">int</span> age)</span> {
+        <span class="hljs-built_in">this</span>.age = age;
+    }
+
+    <span class="hljs-keyword">public</span> <span class="hljs-type">int</span> <span class="hljs-title function_">getAge</span><span class="hljs-params">()</span> {
+        <span class="hljs-keyword">return</span> age;
+    }
+
+    <span class="hljs-keyword">public</span> <span class="hljs-type">int</span> <span class="hljs-title function_">compareTo</span><span class="hljs-params">(Student o)</span> {
+        <span class="hljs-keyword">return</span> <span class="hljs-built_in">this</span>.getAge() - o.getAge();
+    }
+
+    <span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">main</span><span class="hljs-params">(String[] args)</span> {
+        List&lt;Student&gt; list = <span class="hljs-keyword">new</span> <span class="hljs-title class_">ArrayList</span>&lt;&gt;();
+        list.add(<span class="hljs-keyword">new</span> <span class="hljs-title class_">Student</span>(<span class="hljs-number">17</span>));
+        list.add(<span class="hljs-keyword">new</span> <span class="hljs-title class_">Student</span>(<span class="hljs-number">19</span>));
+        list.add(<span class="hljs-keyword">new</span> <span class="hljs-title class_">Student</span>(<span class="hljs-number">18</span>));
+        Collections.sort(list);
+        <span class="hljs-keyword">for</span> (Student student:list) System.out.println(student.getAge());
+    }
+}
+
+</code></pre>
+
+            
+            
+        </body>
+        </html>

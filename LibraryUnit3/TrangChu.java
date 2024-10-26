@@ -10,7 +10,6 @@ public class TrangChu {
         System.out.println("3. Thoat");
         QuanLy quanLy = new QuanLy();
         KhachHang khachHang = new KhachHang();
-        
         int choice;
         do {
             System.out.print("Nhap chuc nang cua ban: ");

@@ -40,8 +40,8 @@ public class Dog {
 => Output: Mix 10
 ```
 -  Vì vậy, thông tin được che giấu bên trong lớp Dog, và chỉ có thể truy cập thông qua các phương thức công khai. Điều này giúp đảm bảo rằng **dữ liệu không bị sửa đổi hoặc truy cập một cách không kiểm soát.**
-##2. Tính kế thừa trong Java
-###a. Tính kế thừa là gì?
+## 2. Tính kế thừa trong Java
+### a. Tính kế thừa là gì?
 - **Kế thừa (Inheritance)** là một trong những khía cạnh quan trọng nhất của Lập Trình Hướng Đối Tượng (OOP). Nó cho phép bạn **tạo ra các lớp mới bằng cách sử dụng thông tin và hành vi từ các lớp đã tồn tại.**
 ###b. Vì sao cần kế thừa
 - Tính kế thừa giúp **tái sử dụng mã nguồn và tạo ra cấu trúc phân cấp cho các lớp.** Điều này cho phép bạn xây dựng các lớp mới trên cơ sở của các lớp đã có, tiết kiệm thời gian và công sức, đồng thời duy trì tính nhất quán trong mã nguồn.
@@ -81,9 +81,9 @@ public class Dog {
     }
 }
 ```
-###d. Các kiểu kế thừa
+### d. Các kiểu kế thừa
 - Có 3 kiểu kế thừa trong java đó là đơn kế thừa, kế thừa nhiều cấp, kế thừa thứ bậc.
-![Alt text](image.png)
+
 - **Đơn kế thừa**: Một lớp con kế thừa với một lớp cha.
 ```java
 class Cho{
@@ -163,12 +163,12 @@ Output: Ha Ha
         He He
 ```
 > **Không có đa kế thừa**: Có 3 lớp A, B, C. Trong đó lớp C kế thừa từ các lớp A và B. Nếu các lớp A và B có phương thức giống nhau và bạn gọi nó từ đối tượng của lớp con, như vậy khó có thể xác đinh được việc gọi phương thức của lớp A hay B.
-##3. Tính đa hình
-###a. Tính đa hình là gì?
+## 3. Tính đa hình
+### a. Tính đa hình là gì?
 - **Tính đa hình (Polymorphism)** là một khía cạnh quan trọng trong Lập Trình Hướng Đối Tượng (OOP). Nó cho phép bạn thực hiện cùng một hành động trên các đối tượng khác nhau mà không cần quan tâm đến loại đối tượng cụ thể.
-###b. Vì sao cần tính đa hình
+### b. Vì sao cần tính đa hình
 - Tính đa hình giúp tạo ra **mã nguồn linh hoạt và dễ bảo trì**. Nó cho phép bạn viết các phương thức chung mà có thể được sử dụng trên nhiều lớp khác nhau, **giúp giảm sự lặp lại mã và tạo ra mã nguồn dễ mở rộng.**
-###c. Ví dụ:
+### c. Ví dụ:
 - Đa hình trong lúc thực thi là ta ghi đè các phương thức của lớp cha bằng phương thức y hệt về tên và tham số trong lớp con.
 ```java
 class Cho{

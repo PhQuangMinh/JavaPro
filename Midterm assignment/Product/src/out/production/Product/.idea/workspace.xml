@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="Product:jar" />
+    </artifacts-to-build>
+  </component>
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="fcd18ab5-0104-4fb2-a006-739037edba66" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/Product_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Product.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../LibraryUnit3/TrangChu.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../LibraryUnit3/TrangChu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../LibraryUnit4/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../LibraryUnit4/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Main/Java/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Main/Java/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Main/Java/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Main/Java/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Main/Java/All in/Board.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Main/Java/All in/Board.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Main/Java/All in/Choice.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Main/Java/All in/Choice.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Main/Java/All in/ClearScreen.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Main/Java/All in/ClearScreen.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Main/Java/All in/Game.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Main/Java/All in/GameShip.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Main/Java/All in/GameShip.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Main/Java/All in/GameShot.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Main/Java/All in/GameShot.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Main/Java/All in/MakeColor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Main/Java/All in/MakeColor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Main/Java/All in/MenuGame.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Main/Java/All in/MenuGame.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Main/Java/All in/Play.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Main/Java/All in/Play.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Main/Java/All in/Player.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Main/Java/All in/Player.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Main/Java/All in/Run.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Main/Java/All in/Run.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Main/Java/All in/Ship.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Main/Java/All in/Ship.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Main/Java/All in/Shot.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Main/Java/All in/Shot.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Main/Java/Main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Main/Java/controller/Choice.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Main/Java/controller/GameController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Main/Java/controller/MenuGame.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Main/Java/controller/Player.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Main/Java/controller/Ship.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Main/Java/controller/Test.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Main/Java/model/Board.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Main/Java/model/Game.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Main/Java/model/GameBoard.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Main/Java/model/GameShip.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Main/Java/model/GameShot.java" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 1
+}</component>
+  <component name="ProjectId" id="2Z4einwLzLyPsLu0gdZkTu1ZNF7" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Programming/PushGit/seabattle/Phạm Quang Minh/jar&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Artifacts&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
+  }
+}</component>
+  <component name="RunManager">
+    <configuration name="Run" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Run" />
+      <module name="Product" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Run" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="fcd18ab5-0104-4fb2-a006-739037edba66" name="Changes" comment="" />
+      <created>1701685909688</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1701685909688</updated>
+    </task>
+    <servers />
+  </component>
+</project>
